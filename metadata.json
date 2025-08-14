@@ -1,0 +1,6 @@
+{
+  "name": "expenses tracker with login",
+  "description": "A comprehensive expense tracking application designed for couples, featuring dual-currency date handling (AD/BS), detailed expense categorization, and secure data storage in your personal Google Drive.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

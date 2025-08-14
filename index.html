@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Expense Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet"/>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/api.js" async defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'light-bg': '#f5f5f5',
+              'light-text': '#1F2937',
+              'light-card': '#FFFFFF',
+              'light-card-alt': '#F3F4F6',
+              'light-border': '#D1D5DB',
+              'husband-light': '#DBEAFE',
+              'husband-light-text': '#1E40AF',
+              'husband-light-hover': '#BFDBFE',
+              'wife-light': '#FEE2E2',
+              'wife-light-text': '#9D174D',
+              'wife-light-hover': '#FECACA',
+              'dark-bg': '#242424',
+              'dark-text': '#E0E0E0',
+              'dark-card': '#383838',
+              'dark-border': '#4A4A4A',
+              'husband-dark': '#2D65B2',
+              'husband-dark-hover': '#3A7CD0',
+              'wife-dark': '#B12D55',
+              'wife-dark-hover': '#D23A65',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "chart.js": "https://esm.sh/chart.js@^4.4.2",
+    "react-chartjs-2": "https://esm.sh/react-chartjs-2@^5.2.0"
+  }
+}
+</script>
+<style>
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
